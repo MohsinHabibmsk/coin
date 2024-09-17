@@ -1,0 +1,351 @@
+    body {
+        font-family: sans-serif;
+        background-image: url(bg.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    @media (max-width: 768px) {
+
+        /* Adjust breakpoint as needed */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* Prevent scrolling */
+            display: flex;
+            align-items: center;
+            /* Center content vertically */
+            justify-content: center;
+            /* Center content horizontally */
+            height: 100vh;
+            /* Ensure body takes full height of the viewport */
+            width: 100vw;
+            /* Ensure body takes full width of the viewport */
+        }
+
+
+
+        #no {
+            width: 100px;
+            /* Reduced size for mobile */
+            height: 100px;
+            margin-bottom: 10px;
+            /* Add margin below for visual separation */
+
+        }
+
+        .notification {
+            width: 90%;
+            /* Ensure it takes up 90% width on mobile */
+            left: 50%;
+            /* Centering */
+            transform: translateX(-50%);
+            /* Centering */
+            padding: 10px;
+            /* Adjust padding for mobile if needed */
+            font-size: 14px;
+            /* Adjust font size for better readability */
+        }
+
+        .notification-message {
+            font-size: 1.2em;
+        }
+
+        .dismiss-button {
+            background-color: #ffffff;
+            color: #ff4081;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .dismiss-button:hover {
+            background-color: #f0f0f0;
+            /* Slight change on hover */
+        }
+
+        social-media {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            /* Space between links */
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #0073e6;
+            /* You can change this to match your design */
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #ececec;
+            /* Light background for each link */
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .social-media a:hover {
+            background: #d1e7dd;
+            /* Slightly darker on hover */
+            transform: scale(1.02);
+            /* Slight scaling effect on hover */
+        }
+
+        .logo {
+            width: 30px;
+            /* Adjust logo size as needed */
+            height: auto;
+            margin-right: 10px;
+            /* Space between logo and text */
+        }
+
+        .container {
+            background-image: url(bg.jpg);
+            padding: 30px;
+            /* Reduced padding for mobile */
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .tab-menu {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            /* Allow horizontal scrolling for smaller screens */
+            margin: 10px 0;
+            background-image: url(bg.jpg);
+            /* Futuristic gradient */
+            border-radius: 12px;
+            /* Rounded corners */
+            padding: 5px;
+            /* Add padding around the tabs */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            /* Subtle shadow for depth */
+        }
+
+        .tab-item {
+            padding: 12px 20px;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent background for tabs */
+            margin-right: 10px;
+            /* Space between tabs */
+            border-radius: 8px;
+            /* Rounded corners for the tab */
+            transition: background 0.3s, transform 0.3s;
+            /* Smooth transition effects */
+        }
+
+        .tab-item:hover {
+            background: rgba(255, 255, 255, 0.9);
+            /* Change background on hover */
+            transform: scale(1.05);
+            /* Slightly enlarge on hover */
+        }
+
+        .tab-item.active {
+            border-bottom: 3px solid #ff4081;
+            /* Bright accent color for active tab */
+            background: white;
+            /* Fully opaque background for active tab */
+        }
+
+        /* Other styles */
+        .tab-content {
+            padding: 15px;
+            /* Reduced padding for mobile */
+        }
+
+        #coin-container {
+            display: flex;
+            flex-direction: column;
+            /* Stack items vertically */
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        #logo {
+            width: 40px;
+            /* Reduced size for mobile */
+            height: 40px;
+            margin-bottom: 5px;
+            /* Add margin below for visual separation */
+        }
+
+        #coin-image {
+            width: 180px;
+            /* Reduced size for mobile */
+            height: 180px;
+            margin-bottom: 10px;
+            /* Add margin below for visual separation */
+
+        }
+
+        #tap-button {
+            padding: 10px 20px;
+            /* Reduced padding */
+            font-size: 14px;
+            /* Reduced font size */
+        }
+
+        /* ... rest of the styles ... */
+    }
+
+    .container {
+        background-image: url(bg.jpg);
+        padding: 30px;
+
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+
+    }
+
+    .tab-menu {
+        display: flex;
+        margin: 20px 0;
+        border-radius: 10%;
+    }
+
+    .tab-item {
+        padding: 10px 20px;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        background-color: #a7a0ab;
+        margin-right: 10px;
+        border-radius: 20%;
+    }
+
+
+    .tab-item:hover {
+        padding: 10px 20px;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        background-color: #7d09cf62;
+        margin-right: 10px;
+        border-radius: 20%;
+    }
+
+
+    .tab-item.active {
+        border-bottom: 2px solid blue;
+        background-color: #e0e0e0;
+    }
+
+    .tab-item i {
+        margin-right: 5px;
+    }
+
+
+
+    .num {
+        padding: 10px 20px;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        background-color: #FFFF00;
+        margin-right: 10px;
+        border-radius: 20%;
+
+    }
+
+    .tab-content {
+        padding: 20px;
+        border-radius: 5px;
+        width: 280px;
+        height: 380px;
+    }
+
+    #coin-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+
+    #logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 50%;
+        /* Create the circular border */
+        border: 5px solid #f0f0f0;
+        /* Adjust border color and width as needed */
+    }
+
+    #coin-image {
+        width: 300px;
+        height: 300px;
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    #tap-button {
+        padding: 15px 30px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #tap-button:hover {
+        background-color: #3e8e41;
+    }
+
+    #upgrade-container {
+        /* Styles for upgrade buttons later */
+    }
+
+    .stats {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .stats p {
+        color: #b8860b;
+        /* Black gold color */
+    }
+
+    .stats p:nth-child(even) {
+        color: #800080;
+        /* Purple color */
+    }
+
+
+    .notification {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ec0954;
+        /* Bright background for the alert */
+        color: #fff;
+        padding: 15px 20px;
+        position: absolute;
+        /* Change from 'fixed' to 'absolute' */
+        left: 50%;
+        /* Position from the left */
+        transform: translateX(-50%);
+        /* Center it horizontally */
+        top: 20px;
+        /* Space from the top */
+        z-index: 1000;
+        /* Stay on top of other content */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        width: 90%;
+        /* Optional: Limit the width for mobile */
+        max-width: 600px;
+        /* Optional: Max width for larger screens */
+        border-radius: 5px;
+        /* Rounded corners for better aesthetics */
+    }
